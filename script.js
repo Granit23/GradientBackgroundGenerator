@@ -4,7 +4,11 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var h3 = document.querySelector("h3");
 
-console.log(css, color1, color2);
+// match css background with color picker on page load 
+body.style.background = 
+    "linear-gradient(to right, " 
+    + color1.value + ", " 
+    + color2.value + ")";
 
 function setGradient() {
     body.style.background = 
